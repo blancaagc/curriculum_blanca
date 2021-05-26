@@ -26,7 +26,6 @@ public class UserValidator implements Validator<User>{
         validateJob(user.getJob());
         validateCity(user.getCity());
         validateEmailFormat(user.getEmail());
-        validatePhoneNumber(user.getPhoneNumber());
         validateSkills(user.getSkills());
         validateLanguages(user.getLanguages());
         validateWorkExperience(user.getWorkExperience());
@@ -57,13 +56,6 @@ public class UserValidator implements Validator<User>{
     private void validateSkills(List<Skills> skills) {
     }
 
-    private void validatePhoneNumber(String phoneNumber) {
-        if (!isValidNumber(phoneNumber)) {
-            throw new BadRequestException(
-                    String.format(MISSING_REQUIRED_INPUT)
-            );
-        }
-    }
 
     private void validateEmailFormat(String email) {
         if (!isValidString(email)) {
