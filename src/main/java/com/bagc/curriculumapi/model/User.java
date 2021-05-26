@@ -1,4 +1,4 @@
-package model;
+package com.bagc.curriculumapi.model;
 
 import lombok.Data;
 import lombok.Getter;
@@ -25,7 +25,7 @@ public class User {
     private List<Languages> languages;
     private List<WorkExperience> workExperience;
     private List<Education> education;
-    private List<SocialMedia> socialMedia;
+    private SocialMedia socialMedia;
     private List<Challenges> challenges;
     private Config config;
 }

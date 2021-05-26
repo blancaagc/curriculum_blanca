@@ -1,11 +1,11 @@
-package model;
+package com.bagc.curriculumapi.model;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
-public class Languages {
+public class Skills {
 
     private String name;
     private Integer percentage;

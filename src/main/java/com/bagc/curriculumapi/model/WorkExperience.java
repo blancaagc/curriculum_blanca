@@ -1,4 +1,4 @@
-package model;
+package com.bagc.curriculumapi.model;
 
 import lombok.Getter;
 import lombok.Setter;
